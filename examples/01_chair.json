@@ -1,0 +1,105 @@
+{
+  "id": "01_chair",
+  "title": "椅子装配",
+  "feature": "简单串行依赖",
+  "source_task": "chair_ingolf_0650",
+  "input": {
+    "instruction": "组装这个椅子",
+    "parts": [
+      {
+        "id": "part0",
+        "geometry": "竖向薄板"
+      },
+      {
+        "id": "part1",
+        "geometry": "杆状部件"
+      },
+      {
+        "id": "part2",
+        "geometry": "杆状部件"
+      },
+      {
+        "id": "part3",
+        "geometry": "横向薄板"
+      },
+      {
+        "id": "part4",
+        "geometry": "竖向薄板"
+      }
+    ],
+    "connections": [
+      [
+        "part0",
+        "part1"
+      ],
+      [
+        "part0",
+        "part2"
+      ],
+      [
+        "part1",
+        "part3"
+      ],
+      [
+        "part1",
+        "part4"
+      ],
+      [
+        "part2",
+        "part3"
+      ],
+      [
+        "part2",
+        "part4"
+      ]
+    ]
+  },
+  "result": {
+    "tasks": [
+      {
+        "id": "T1",
+        "parts": [
+          "part0",
+          "part1"
+        ],
+        "robots": [
+          "机器人乙"
+        ]
+      },
+      {
+        "id": "T2",
+        "parts": [
+          "part0",
+          "part2"
+        ],
+        "robots": [
+          "机器人乙"
+        ]
+      },
+      {
+        "id": "T3",
+        "parts": [
+          "part1",
+          "part3"
+        ],
+        "robots": [
+          "机器人甲"
+        ]
+      }
+    ],
+    "dependencies": [
+      [
+        "T1",
+        "T2"
+      ],
+      [
+        "T2",
+        "T3"
+      ]
+    ],
+    "decomposition_success": true,
+    "repair_applied": false,
+    "final_allocation_feasible": true,
+    "planning_success": true
+  }
+}
