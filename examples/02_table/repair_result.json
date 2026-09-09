@@ -1,0 +1,22 @@
+{
+  "id": "02_table",
+  "structure_feedback_rounds": 0,
+  "initial_checker_feasible": true,
+  "final_checker_feasible": true,
+  "model_parser_difference_positions": 0,
+  "changed_positions": [],
+  "final_verification": {
+    "unassigned_count": 0,
+    "kvalue_violation_count": 0,
+    "allocation_conflict_count": 0,
+    "capability_mismatch_count": 0,
+    "parallel_conflict_count": 0,
+    "invalid_allocation_count": 0,
+    "stateful_issue_count": 0,
+    "capacity_overflow_count": 0,
+    "normal_redundancy_count": 0
+  },
+  "notes": [
+    "修复前的检验标志取自保存的实验记录；解析列按当时版本的文本解析函数复核，非另一次模型调用。"
+  ]
+}

@@ -1,0 +1,13 @@
+name,battery,mode
+Robot1,0.8,idle
+Robot2,0.3,idle
+Robot3,1.0,error
+Robot4,0.4,idle
+Robot5,0.9,idle
+Robot6,0.8,error
+Robot7,0.6,idle
+Robot8,0.9,busy
+Robot9,1.0,idle
+Robot10,0.7,error
+Robot11,0.6,error
+Robot12,0.9,idle

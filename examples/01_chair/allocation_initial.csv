@@ -1,0 +1,4 @@
+row,column,task_id,model_robot_ids,parsed_robot_ids
+1,1,T1,Robot7,Robot7
+1,2,T2,Robot7,Robot7
+1,3,T3,Robot1,Robot1

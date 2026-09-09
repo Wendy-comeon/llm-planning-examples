@@ -1,0 +1,158 @@
+{
+  "id": "04_cabinet",
+  "source_task": "cabinet_akurum_0014",
+  "title": "柜体装配",
+  "input": {
+    "instruction": "组装这个柜体",
+    "parts": [
+      {
+        "id": "part0",
+        "geometry": "竖向薄板"
+      },
+      {
+        "id": "part1",
+        "geometry": "竖向薄板"
+      },
+      {
+        "id": "part2",
+        "geometry": "竖向薄板"
+      },
+      {
+        "id": "part3",
+        "geometry": "竖向薄板"
+      },
+      {
+        "id": "part4",
+        "geometry": "竖向薄板"
+      },
+      {
+        "id": "part5",
+        "geometry": "竖向薄板"
+      },
+      {
+        "id": "part6",
+        "geometry": "横向薄板"
+      },
+      {
+        "id": "part7",
+        "geometry": "横向薄板"
+      }
+    ],
+    "connections": [
+      [
+        "part0",
+        "part6"
+      ],
+      [
+        "part1",
+        "part6"
+      ],
+      [
+        "part2",
+        "part6"
+      ],
+      [
+        "part3",
+        "part6"
+      ],
+      [
+        "part3",
+        "part7"
+      ],
+      [
+        "part4",
+        "part6"
+      ],
+      [
+        "part4",
+        "part7"
+      ],
+      [
+        "part5",
+        "part6"
+      ],
+      [
+        "part5",
+        "part7"
+      ]
+    ]
+  },
+  "tasks": [
+    {
+      "id": "T1",
+      "parts": [
+        "part0",
+        "part6"
+      ]
+    },
+    {
+      "id": "T2",
+      "parts": [
+        "part1",
+        "part6"
+      ]
+    },
+    {
+      "id": "T3",
+      "parts": [
+        "part2",
+        "part6"
+      ]
+    },
+    {
+      "id": "T4",
+      "parts": [
+        "part3",
+        "part6"
+      ]
+    },
+    {
+      "id": "T5",
+      "parts": [
+        "part4",
+        "part6"
+      ]
+    },
+    {
+      "id": "T6",
+      "parts": [
+        "part5",
+        "part6"
+      ]
+    },
+    {
+      "id": "T7",
+      "parts": [
+        "part3",
+        "part7"
+      ]
+    }
+  ],
+  "dependencies": [
+    [
+      "T1",
+      "T2"
+    ],
+    [
+      "T2",
+      "T3"
+    ],
+    [
+      "T3",
+      "T4"
+    ],
+    [
+      "T4",
+      "T5"
+    ],
+    [
+      "T5",
+      "T6"
+    ],
+    [
+      "T6",
+      "T7"
+    ]
+  ],
+  "task_numbering": "采用结构表示阶段的任务编号，与矩阵位置和分配结果一致。"
+}

@@ -1,0 +1,120 @@
+{
+  "id": "03_bookcase",
+  "source_task": "bookcase_besta_0172",
+  "title": "书柜装配",
+  "input": {
+    "instruction": "组装这个书柜",
+    "parts": [
+      {
+        "id": "part0",
+        "geometry": "竖向薄板"
+      },
+      {
+        "id": "part1",
+        "geometry": "竖向薄板"
+      },
+      {
+        "id": "part2",
+        "geometry": "横向薄板"
+      },
+      {
+        "id": "part3",
+        "geometry": "竖向薄板"
+      },
+      {
+        "id": "part4",
+        "geometry": "横向薄板"
+      },
+      {
+        "id": "part5",
+        "geometry": "横向薄板"
+      }
+    ],
+    "connections": [
+      [
+        "part0",
+        "part2"
+      ],
+      [
+        "part1",
+        "part2"
+      ],
+      [
+        "part1",
+        "part4"
+      ],
+      [
+        "part1",
+        "part5"
+      ],
+      [
+        "part2",
+        "part3"
+      ],
+      [
+        "part3",
+        "part4"
+      ],
+      [
+        "part3",
+        "part5"
+      ]
+    ]
+  },
+  "tasks": [
+    {
+      "id": "T1",
+      "parts": [
+        "part1",
+        "part5"
+      ]
+    },
+    {
+      "id": "T2",
+      "parts": [
+        "part3",
+        "part5"
+      ]
+    },
+    {
+      "id": "T3",
+      "parts": [
+        "part1",
+        "part4"
+      ]
+    },
+    {
+      "id": "T4",
+      "parts": [
+        "part0",
+        "part2"
+      ]
+    },
+    {
+      "id": "T5",
+      "parts": [
+        "part1",
+        "part2"
+      ]
+    }
+  ],
+  "dependencies": [
+    [
+      "T1",
+      "T2"
+    ],
+    [
+      "T2",
+      "T3"
+    ],
+    [
+      "T3",
+      "T5"
+    ],
+    [
+      "T4",
+      "T5"
+    ]
+  ],
+  "task_numbering": "采用结构表示阶段的任务编号，与矩阵位置和分配结果一致。"
+}

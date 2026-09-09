@@ -1,0 +1,164 @@
+{
+  "robots": [
+    {
+      "name": "Robot1",
+      "arm": "single",
+      "max_load": 4,
+      "speed": 1.5,
+      "type": "Sawyer",
+      "skills": [
+        "GoToObject",
+        "CarryObject",
+        "ConnectObject",
+        "FixObject"
+      ],
+      "connect_units": 1
+    },
+    {
+      "name": "Robot2",
+      "arm": "single",
+      "max_load": 4,
+      "speed": 1.6,
+      "type": "Sawyer",
+      "skills": [
+        "GoToObject",
+        "CarryObject",
+        "ConnectObject",
+        "FixObject"
+      ],
+      "connect_units": 1
+    },
+    {
+      "name": "Robot3",
+      "arm": "single",
+      "max_load": 3.8,
+      "speed": 1.5,
+      "type": "Sawyer",
+      "skills": [
+        "GoToObject",
+        "CarryObject",
+        "ConnectObject",
+        "FixObject"
+      ],
+      "connect_units": 1
+    },
+    {
+      "name": "Robot4",
+      "arm": "single",
+      "max_load": 3,
+      "speed": 2,
+      "type": "Panda",
+      "skills": [
+        "GoToObject",
+        "CarryObject",
+        "ConnectObject",
+        "FixObject"
+      ],
+      "connect_units": 1
+    },
+    {
+      "name": "Robot5",
+      "arm": "single",
+      "max_load": 2.7,
+      "speed": 2.2,
+      "type": "Panda",
+      "skills": [
+        "GoToObject",
+        "CarryObject",
+        "ConnectObject",
+        "FixObject"
+      ],
+      "connect_units": 1
+    },
+    {
+      "name": "Robot6",
+      "arm": "single",
+      "max_load": 2.9,
+      "speed": 1.8,
+      "type": "Panda",
+      "skills": [
+        "GoToObject",
+        "CarryObject",
+        "ConnectObject",
+        "FixObject"
+      ],
+      "connect_units": 1
+    },
+    {
+      "name": "Robot7",
+      "arm": "dual",
+      "max_load": 2.2,
+      "speed": 1,
+      "type": "Baxter",
+      "skills": [
+        "GoToObject",
+        "CarryObject",
+        "ConnectObject",
+        "FixObject"
+      ],
+      "connect_units": 2
+    },
+    {
+      "name": "Robot8",
+      "arm": "dual",
+      "max_load": 2.2,
+      "speed": 1,
+      "type": "Baxter",
+      "skills": [
+        "GoToObject",
+        "CarryObject",
+        "ConnectObject",
+        "FixObject"
+      ],
+      "connect_units": 2
+    },
+    {
+      "name": "Robot9",
+      "arm": "single",
+      "max_load": 1.6,
+      "speed": 0,
+      "type": "Jaco",
+      "skills": [
+        "ConnectObject(precisely)"
+      ],
+      "connect_units": 1
+    },
+    {
+      "name": "Robot10",
+      "arm": "single",
+      "max_load": 1.6,
+      "speed": 0,
+      "type": "Jaco",
+      "skills": [
+        "ConnectObject(precisely)"
+      ],
+      "connect_units": 1
+    },
+    {
+      "name": "Robot11",
+      "arm": "single",
+      "max_load": 5.7,
+      "speed": 1,
+      "type": "Fetch",
+      "skills": [
+        "GoToObject",
+        "CarryObject",
+        "FixObject"
+      ],
+      "connect_units": 0
+    },
+    {
+      "name": "Robot12",
+      "arm": "single",
+      "max_load": 6,
+      "speed": 0.8,
+      "type": "Fetch",
+      "skills": [
+        "GoToObject",
+        "CarryObject",
+        "FixObject"
+      ],
+      "connect_units": 0
+    }
+  ]
+}

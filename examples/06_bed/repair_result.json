@@ -1,0 +1,250 @@
+{
+  "id": "06_bed",
+  "structure_feedback_rounds": 1,
+  "initial_checker_feasible": false,
+  "final_checker_feasible": true,
+  "model_parser_difference_positions": 6,
+  "changed_positions": [
+    {
+      "row": 1,
+      "column": 1,
+      "task_id": "T1",
+      "model_before": [
+        "Robot7"
+      ],
+      "parsed_before": [
+        "Robot7"
+      ],
+      "final": [
+        "Robot4",
+        "Robot5"
+      ]
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "task_id": "T2",
+      "model_before": [
+        "Robot7"
+      ],
+      "parsed_before": [
+        "Robot7"
+      ],
+      "final": [
+        "Robot1",
+        "Robot7"
+      ]
+    },
+    {
+      "row": 1,
+      "column": 3,
+      "task_id": "T3",
+      "model_before": [
+        "Robot7"
+      ],
+      "parsed_before": [
+        "Robot7"
+      ],
+      "final": [
+        "Robot1",
+        "Robot4"
+      ]
+    },
+    {
+      "row": 1,
+      "column": 4,
+      "task_id": "T8",
+      "model_before": [
+        "Robot5",
+        "Robot7"
+      ],
+      "parsed_before": [
+        "Robot7"
+      ],
+      "final": [
+        "Robot1",
+        "Robot4"
+      ]
+    },
+    {
+      "row": 1,
+      "column": 5,
+      "task_id": "T9",
+      "model_before": [
+        "Robot5",
+        "Robot7"
+      ],
+      "parsed_before": [
+        "Robot7"
+      ],
+      "final": [
+        "Robot1",
+        "Robot4"
+      ]
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "task_id": "T4",
+      "model_before": [
+        "Robot1"
+      ],
+      "parsed_before": [
+        "Robot1"
+      ],
+      "final": [
+        "Robot7"
+      ]
+    },
+    {
+      "row": 2,
+      "column": 2,
+      "task_id": "T6",
+      "model_before": [
+        "Robot1"
+      ],
+      "parsed_before": [
+        "Robot1"
+      ],
+      "final": [
+        "Robot4",
+        "Robot5"
+      ]
+    },
+    {
+      "row": 2,
+      "column": 3,
+      "task_id": "T7",
+      "model_before": [
+        "Robot1"
+      ],
+      "parsed_before": [
+        "Robot1"
+      ],
+      "final": [
+        "Robot5"
+      ]
+    },
+    {
+      "row": 2,
+      "column": 4,
+      "task_id": "T8",
+      "model_before": [
+        "Robot1",
+        "Robot5"
+      ],
+      "parsed_before": [
+        "Robot1"
+      ],
+      "final": [
+        "Robot1",
+        "Robot4"
+      ]
+    },
+    {
+      "row": 2,
+      "column": 5,
+      "task_id": "T9",
+      "model_before": [
+        "Robot1",
+        "Robot5"
+      ],
+      "parsed_before": [
+        "Robot1"
+      ],
+      "final": [
+        "Robot1",
+        "Robot4"
+      ]
+    },
+    {
+      "row": 3,
+      "column": 1,
+      "task_id": "T5",
+      "model_before": [
+        "Robot4"
+      ],
+      "parsed_before": [
+        "Robot4"
+      ],
+      "final": [
+        "Robot1",
+        "Robot9"
+      ]
+    },
+    {
+      "row": 3,
+      "column": 2,
+      "task_id": null,
+      "model_before": [
+        "Robot4"
+      ],
+      "parsed_before": [
+        "Robot4"
+      ],
+      "final": []
+    },
+    {
+      "row": 3,
+      "column": 3,
+      "task_id": "T7",
+      "model_before": [
+        "Robot4"
+      ],
+      "parsed_before": [
+        "Robot4"
+      ],
+      "final": [
+        "Robot5"
+      ]
+    },
+    {
+      "row": 3,
+      "column": 4,
+      "task_id": "T8",
+      "model_before": [
+        "Robot4",
+        "Robot5"
+      ],
+      "parsed_before": [
+        "Robot4"
+      ],
+      "final": [
+        "Robot1",
+        "Robot4"
+      ]
+    },
+    {
+      "row": 3,
+      "column": 5,
+      "task_id": "T9",
+      "model_before": [
+        "Robot4",
+        "Robot5"
+      ],
+      "parsed_before": [
+        "Robot4"
+      ],
+      "final": [
+        "Robot1",
+        "Robot4"
+      ]
+    }
+  ],
+  "final_verification": {
+    "unassigned_count": 0,
+    "kvalue_violation_count": 0,
+    "allocation_conflict_count": 0,
+    "capability_mismatch_count": 0,
+    "parallel_conflict_count": 0,
+    "invalid_allocation_count": 0,
+    "stateful_issue_count": 0,
+    "capacity_overflow_count": 0,
+    "normal_redundancy_count": 1
+  },
+  "notes": [
+    "修复前的检验标志取自保存的实验记录；解析列按当时版本的文本解析函数复核，非另一次模型调用。",
+    "部分多机器人列表在旧解析器中只读入首个编号；格式解析造成的缺失不能直接认定为模型遗漏。",
+    "本例候选文件已包含一轮结构反馈，不是首次模型输出；无任务编号的位置对应矩阵空位，最终已清除。"
+  ]
+}

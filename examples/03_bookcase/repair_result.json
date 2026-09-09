@@ -1,0 +1,98 @@
+{
+  "id": "03_bookcase",
+  "structure_feedback_rounds": 0,
+  "initial_checker_feasible": false,
+  "final_checker_feasible": true,
+  "model_parser_difference_positions": 4,
+  "changed_positions": [
+    {
+      "row": 1,
+      "column": 1,
+      "task_id": "T1",
+      "model_before": [
+        "Robot1",
+        "Robot4"
+      ],
+      "parsed_before": [
+        "Robot1"
+      ],
+      "final": [
+        "Robot7"
+      ]
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "task_id": "T2",
+      "model_before": [
+        "Robot1",
+        "Robot4"
+      ],
+      "parsed_before": [
+        "Robot1"
+      ],
+      "final": [
+        "Robot7"
+      ]
+    },
+    {
+      "row": 1,
+      "column": 4,
+      "task_id": "T5",
+      "model_before": [
+        "Robot1",
+        "Robot4"
+      ],
+      "parsed_before": [
+        "Robot1"
+      ],
+      "final": [
+        "Robot7"
+      ]
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "task_id": "T4",
+      "model_before": [
+        "Robot5"
+      ],
+      "parsed_before": [
+        "Robot5"
+      ],
+      "final": [
+        "Robot1"
+      ]
+    },
+    {
+      "row": 2,
+      "column": 4,
+      "task_id": "T5",
+      "model_before": [
+        "Robot1",
+        "Robot4"
+      ],
+      "parsed_before": [
+        "Robot1"
+      ],
+      "final": [
+        "Robot7"
+      ]
+    }
+  ],
+  "final_verification": {
+    "unassigned_count": 0,
+    "kvalue_violation_count": 0,
+    "allocation_conflict_count": 0,
+    "capability_mismatch_count": 0,
+    "parallel_conflict_count": 0,
+    "invalid_allocation_count": 0,
+    "stateful_issue_count": 0,
+    "capacity_overflow_count": 0,
+    "normal_redundancy_count": 0
+  },
+  "notes": [
+    "修复前的检验标志取自保存的实验记录；解析列按当时版本的文本解析函数复核，非另一次模型调用。",
+    "部分多机器人列表在旧解析器中只读入首个编号；格式解析造成的缺失不能直接认定为模型遗漏。"
+  ]
+}

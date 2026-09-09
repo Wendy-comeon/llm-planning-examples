@@ -1,0 +1,93 @@
+{
+  "id": "02_table",
+  "source_task": "table_bjorkudden_0207",
+  "title": "桌子装配",
+  "input": {
+    "instruction": "组装这个桌子",
+    "parts": [
+      {
+        "id": "part0",
+        "geometry": "杆状部件"
+      },
+      {
+        "id": "part1",
+        "geometry": "杆状部件"
+      },
+      {
+        "id": "part2",
+        "geometry": "杆状部件"
+      },
+      {
+        "id": "part3",
+        "geometry": "杆状部件"
+      },
+      {
+        "id": "part4",
+        "geometry": "横向薄板"
+      }
+    ],
+    "connections": [
+      [
+        "part0",
+        "part4"
+      ],
+      [
+        "part1",
+        "part4"
+      ],
+      [
+        "part2",
+        "part4"
+      ],
+      [
+        "part3",
+        "part4"
+      ]
+    ]
+  },
+  "tasks": [
+    {
+      "id": "T1",
+      "parts": [
+        "part0",
+        "part4"
+      ]
+    },
+    {
+      "id": "T2",
+      "parts": [
+        "part1",
+        "part4"
+      ]
+    },
+    {
+      "id": "T3",
+      "parts": [
+        "part2",
+        "part4"
+      ]
+    },
+    {
+      "id": "T4",
+      "parts": [
+        "part3",
+        "part4"
+      ]
+    }
+  ],
+  "dependencies": [
+    [
+      "T1",
+      "T2"
+    ],
+    [
+      "T2",
+      "T3"
+    ],
+    [
+      "T3",
+      "T4"
+    ]
+  ],
+  "task_numbering": "采用结构表示阶段的任务编号，与矩阵位置和分配结果一致。"
+}

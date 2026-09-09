@@ -1,0 +1,4 @@
+row,column,task_id,robot_ids,required_connect_units
+1,1,T1,Robot7,2
+1,2,T2,Robot7,2
+1,3,T3,Robot1,1
